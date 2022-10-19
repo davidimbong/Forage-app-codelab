@@ -32,7 +32,7 @@ class ForageableViewModel(
 
     val allItems: LiveData<List<Forageable>> = forageableDao.getForageables().asLiveData()
 
-    fun retrieveItem(id: Long): LiveData<Forageable> {
+    fun retrieveForageable(id: Long): LiveData<Forageable> {
         return forageableDao.getForageable(id).asLiveData()
     }
 

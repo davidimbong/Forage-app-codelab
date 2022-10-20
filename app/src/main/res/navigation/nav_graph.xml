@@ -38,7 +38,9 @@
         tools:layout="@layout/fragment_add_forageable" >
         <action
             android:id="@+id/action_addForageableFragment_to_forageableListFragment"
-            app:destination="@id/forageableListFragment" />
+            app:destination="@id/forageableListFragment"
+            app:popUpTo="@id/forageableListFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="id"
             app:argType="long"
